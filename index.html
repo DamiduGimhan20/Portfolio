@@ -12,6 +12,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body class="main-content">
+<!--Script-->
+<script>
+    // Text to be typed
+var textToType = " J.K.Damidu Gimhan.";
+
+// Delay between typing each character (in milliseconds)
+var typingSpeed = 150;
+
+var index = 0;
+var typingInterval;
+
+function typeText() {
+    var typingText = document.getElementById("typing-text");
+    if (index < textToType.length) {
+        typingText.innerHTML += textToType.charAt(index);
+        index++;
+    } else {
+        // Clear the text and reset index when it completes
+        typingText.innerHTML = "";
+        index = 0;
+    }
+}
+
+// Start the typing animation and make it continuous
+typingInterval = setInterval(typeText, typingSpeed);
+</script>
+
+
+
     <header class="container header active" id="home">
         <div class="header-content">
             <div class="left-header">
@@ -22,7 +51,7 @@
             </div>
             <div class="right-header">
                 <h1 class="name">
-                    Hi, I'm <span>J.K.Damidu Gimhan</span><br>
+                    Hi, I'm <span id="typing-text"></span><br>
                     A Web Developer.
                 </h1>
                 <p>
