@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damidu Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="main-content">
+<!--Script-->
+<script>
+    // Text to be typed
+var textToType = " J.K.Damidu Gimhan.";
+
+// Delay between typing each character (in milliseconds)
+var typingSpeed = 150;
+
+var index = 0;
+var typingInterval;
+
+function typeText() {
+    var typingText = document.getElementById("typing-text");
+    if (index < textToType.length) {
+        typingText.innerHTML += textToType.charAt(index);
+        index++;
+    } else {
+        // Clear the text and reset index when it completes
+        typingText.innerHTML = "";
+        index = 0;
+    }
+}
+
+// Start the typing animation and make it continuous
+typingInterval = setInterval(typeText, typingSpeed);
+</script>
+
+
+
+    <header class="container header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="img/hero.jpg" alt="">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, I'm <span id="typing-text"></span><br>
+                    A Web Developer.
+                </h1>
+                <p>
+                    I'm Successfully completed Higher National Diploma in Inforamtion Technology In Sri Lanka Institute Of Advanced Technology Education (SLIATE),
+                    with a strong passion for exploring new opportunities in the fields of <b>Software Development, Web Development</b>.
+                    Currently seeking an internship opportunity to further develop skills and gain industry experience.
+                </p>
+                <div class="btn-con">
+                    <a href="https://drive.google.com/file/d/1lxg20pLPjelxrWABVAMIs1kSjBmd_w0y/view?usp=sharing" class="main-btn">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+               <!--1st Section-->
+        <section class="container about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="about">
+                    <h4>Information About me</h4>
+
+                <p class="text-about"> I'm Damindu Gimhan Jaywardahna and I'am Student at Higher National Diploma Information Technology in SLIATE Dehiwala , with a specialization in web development, graphic design, and mobile application development</p>
+                <p class="text-about">I love working as a Web Developer and My tech stack includes HTML, CSS, Js, TypeScript. I am also familar with SQL.</p>
+                <p class="text-about">I am also proficient in C++, Java and love solving problems involving data structures and algorithms.</p>
+                <p class="text-about">I love making side projects and learn about new technologies.</p>
+                        
+                    <div class="item">
+                        <img class="ht" src="img/logo/vs.png" alt="Img">
+                        <img class="ht" src="img/logo/git.png" alt="Img">
+                        
+                    </div>
+                    
+
+                </div>
+
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-title">My Skills</h4>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title"><img class="ht" src="img/logo/html.png" alt="Img"></p>
+                        <div class="progress-con">
+                            <p class="prog-text">90%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><img class="ht" src="img/logo/css.png" alt="Img"></p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><img class="ht" src="img/logo/js.png" alt="Img"></p>
+                        <div class="progress-con">
+                            <p class="prog-text">50%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><img class="ht" src="img/logo/php.png" alt="Img"></p>
+                        <div class="progress-con">
+                            <p class="prog-text">55%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><img class="ht" src="img/logo/boostrap.png" alt="Img"></p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><img class="ht" src="img/logo/mysql.png" alt="Img"></p>
+                        <div class="progress-con">
+                            <p class="prog-text">50%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><img class="ht" src="img/logo/java.png" alt="Img"></p>
+                        <div class="progress-con">
+                            <p class="prog-text">65%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title"><img class="ht" src="img/logo/python.png" alt="Img"></p>
+                        <div class="progress-con">
+                            <p class="prog-text">50%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="stat-title">My Timeline</h4>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">2022 - present</p>
+                    <h5>Web Developer<span> Kushalee Roo Sewana Studio</span></h5>
+                    <p>
+                        Maintaining computer equipment by ensuring that it is kept
+                        clean and operational at all times</p>
+                        <P>Installing software on computers, including operating systems,
+                        applications software, security software, and other programs
+
+                    </p>
+                </div>
+        </section>
+
+               <!--Portfolio Section-->
+        <section class="container" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Portfolio</span></h2>
+            </div>
+            <p class="port-text">
+                Here is some of my work that I've done in various programming languages.
+            </p>
+            <div class="portfolios">
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/project/JanDi 5.PNG" alt="Jandi5">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/project/Resin ART.PNG" alt="Resin Art">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!--Contact Me Section-->
+        
+        <section class="container contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h4>Contact me here</h4>
+
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location</span>
+                                </div>
+                                <p>
+                                    : Rathmalana,Colombo,Sri Lanka,
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email</span>
+                                </div>
+                                <p>
+                                    <span>: damidugimhan20@gmail.com</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Education</span>
+                                </div>
+                                <p>
+                                    <span>: Advanced Technological Institute,Dehiwala</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Mobile Number</span>
+                                </div>
+                                <p>
+                                    <span>: 0702520196</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-globe-africa"></i>
+                                    <span>Languages</span>
+                                </div>
+                                <p>
+                                    <span>: English, Sinhala</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="www.facebook.com" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-contact">
+                        <!--Form Section-->
+                        <form action="form-process.php" method="post" class="contact-form">
+                            <div class="input-control i-c-2">
+                                <input type="text" id="name" name="name" required placeholder="YOUR NAME">
+                                <input type="email" id="email" name="email" required placeholder="YOUR EMAIL">
+                            </div>
+                            <div class="input-control">
+                                <input type="text" id="subject" name="subject" required placeholder="ENTER SUBJECT">
+                            </div>
+                            <div class="input-control">
+                                <textarea  id="message" name="message" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                            </div>
+                            <div class="sub">
+                                <input type="submit" class="button">
+                            </div>
+                            <br>
+                            <hr>
+                            <br>
+                            <div class="submit-btn">
+                                <a href="https://drive.google.com/file/d/1lxg20pLPjelxrWABVAMIs1kSjBmd_w0y/view?usp=sharing" class="main-btn">
+                                    <span class="btn-text">Download CV</span>
+                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="controls">
+        <div class="control active-btn" data-id="home" >
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="control" data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control" data-id="portfolio">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+    </div>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
